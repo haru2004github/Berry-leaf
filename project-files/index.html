@@ -1,0 +1,1111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Berry leaf</title>
+    <link rel="stylesheet" href="../node_module/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../node_module/@fortawesome/fontawesome-free/css/all.min.css">
+    <link rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <link rel="icon" href="../photos/bl.svg">
+    
+    <link rel="stylesheet" href="./cus.css">
+    <style>
+        /* Loading-section */
+         .loading{
+            width: 100%;
+            height:100vh;
+            background: #000;
+            position: fixed;
+            top:0;
+            left:0;
+            z-index: 1000;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            transition: 1.2s;
+
+         }
+         .loader,
+.loader:before,
+.loader:after {
+  background: #34d399;
+  -webkit-animation: load1 1s infinite ease-in-out;
+  animation: load1 1s infinite ease-in-out;
+  width: 1em;
+  height: 4em;
+  transition: 1s;
+}
+.loader {
+  color: #34d399;
+  text-indent: -9999em;
+  margin: 88px auto;
+  position: relative;
+  font-size: 20px;
+  -webkit-transform: translateZ(0);
+  -ms-transform: translateZ(0);
+  transform: translateZ(0);
+  -webkit-animation-delay: -0.16s;
+  animation-delay: -0.16s;
+  transition: 1s;
+}
+.loader:before,
+.loader:after {
+  position: absolute;
+  top: 0;
+  content: '';
+  transition: 1s;
+}
+.loader:before {
+  left: -1.5em;
+  -webkit-animation-delay: -0.32s;
+  animation-delay: -0.32s;
+}
+.loader:after {
+  left: 1.5em;
+}
+@-webkit-keyframes load1 {
+  0%,
+  80%,
+  100% {
+    box-shadow: 0 0;
+    height: 4em;
+  }
+  40% {
+    box-shadow: 0 -2em;
+    height: 5em;
+  }
+}
+@keyframes load1 {
+  0%,
+  80%,
+  100% {
+    box-shadow: 0 0;
+    height: 4em;
+  }
+  40% {
+    box-shadow: 0 -2em;
+    height: 5em;
+  }
+}
+
+    </style>
+</head>
+<body>
+    <!-- loading -->
+
+    <div class="loading">
+        <div class="loader">Loading...</div>
+    </div>
+
+    <!-- Nav-bar-first -->
+    <section class="bg-color-black head-nav " id="nav">
+        <nav class="container navbar-first animate__animated animate__fadeInDown">
+            <div class="d-flex justify-content-between align-items-center">
+                <ul class="d-flex list-unstyled align-items-center mb-0">
+                    <a href="./index.html">
+                        <li class="text-color-primary">Home</li>
+                    </a>
+                    <a href="./index-2.html">
+                        <li class="text-color-pale-white">Business</li>
+                    </a>
+                    <a href="./index-3.html">
+                        <li class="text-color-pale-white">Contact Us</li>
+                    </a>
+                    <a href="./index-4.html">
+                        <li class="text-color-pale-white">University</li>
+                    </a>
+                    
+                </ul>
+                <div class="">
+                    <span class="text-color-primary">Sign in</span>
+                </div>
+            </div>
+        </nav>
+    </section>
+
+
+    <!-- Home -->
+
+    <section class="bg-color-dark ">
+
+        <!-- navbar-sec -->
+        <div class="container navbar-second py-md-4 animate__animated animate__fadeInDown">
+            <nav class="navbar navbar-expand-lg">
+                <div class="container-fluid">
+                    <div class="d-flex">
+                        <img class="me-1" src="../photos/bl.svg" alt="">
+                    <span>
+                        <h3 class="text-white mb-0">berryleaf</h3>
+                    </span>
+                    </div>
+                  <button class="navbar-toggler o-n" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <div class="menu-icon">
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+          </button>
+                  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                      <li class="nav-item  ">
+                        <a class="nav-link active text-color-primary hover-li" aria-current="page" href="#">Products</a>
+                      </li>
+                      <li class="nav-item ">
+                        <a class="nav-link text-color-medium-white hover-li" href="#">Resources</a>
+                      </li>
+
+                      <li class="nav-item ">
+                        <a class="nav-link text-color-medium-white hover-li" href="#">Company</a>
+                      </li>
+
+                      <li class="nav-item ">
+                        <a class="nav-link text-color-medium-white hover-li" href="#">Pricing</a>
+                      </li>
+                
+                    </ul>
+                    <form class="d-flex" role="search">
+                     
+                        <button class="text-color-primary join-now-btn rounded-3 ">Join Now</button>
+                    </form>
+                  </div>
+                </div>
+              </nav>
+            <!-- <div class="row align-items-center">
+                <div class="col-2">
+                    <div class="nav-icon">
+                        <div class="d-flex align-items-center">
+                            <img class="me-1" src="../photos/bl.svg" alt="">
+                            <span>
+                                <h3 class="text-white mb-0">berryleaf</h3>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-10">
+                    <div class="d-flex justify-content-between align-items-center">
+                        <div class="nav-header">
+                            <ul class="d-flex list-unstyled align-items-center mb-0">
+                                <li class="text-color-medium-white ">Products</li>
+                                <li class="text-color-medium-white ">Resources</li>
+                                <li class="text-color-medium-white ">Company</li>
+                                <li class="text-color-medium-white ">Pricing</li>
+                            </ul>
+                        </div>
+                         
+                        <div class="">
+                            <button class="text-color-primary join-now-btn rounded-3 ">Join Now</button>
+                        </div>
+                    </div>
+                </div>
+            </div> -->
+        </div>
+
+        <!-- content -->
+        <div class="content massive-content headline">
+            <h1 class="text-center  text-white fw-bold hero-h1 ">A Massive<br>
+                Development Playground
+            </h1>
+            <div class="mt-5">
+                <p class="text-color-medium-white text-center">
+                    Join a dynamically growing hacking community and take your cybersecurity
+                    skills to the next level through the most captivating, gamified, hands-on training
+                    experience!
+                </p>
+            </div>
+            <div class="d-flex justify-content-center mt-5">
+                <button class=" bg-color-primary join-now-btn-2 rounded-3 bg fw-bold ">Join Now</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Playground -->
+
+    <section class="bet-dark-and-black">
+
+        <!-- playground-header -->
+        <div class="playground container headline">
+            <div class="headline">
+                <h4 class="text-color-pale-white text-center mb-5">Playground</h4>
+                <h1 class="text-color-medium-white text-center">Real-World Development Scenarios</h1>
+                <h6 class="text-color-pale-white text-center mt-4">
+                    Playground are advanced training labs that simulate real-world scenarios, giving players a chance to assess
+                    and penetrate enterprise infrastructure environments and prove their offensive security skills.
+                </h6>
+            </div>
+        </div>
+
+        <!-- Slide -->
+
+        <div class="container bet-dark-and-black p-lg-5 p-4 headline">
+            <div class="">
+                <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner headline">
+                        <!-- Slide-1 -->
+                      <div class="carousel-item active ">
+                        <div class="swiper-slide">
+        <!-- Main-card -->
+        <div class="card card-padding bg-color-dark mb-15 rounded-3">
+            <div class="card-body">
+                <h3 class=" text-color-medium-white headline">Frontend Web Development</h3>
+                <h6  class=" text-color-pale-white mt-4 headline" >
+                    Playground are advanced training labs that simulate real-world scenarios, giving players a chance to assess<br>
+                    and penetrate enterprise infrastructure environments and prove their offensive security skills.
+                </h6>
+                <!-- Sub-Card -->
+                <div class="sub-card row justify-content-between">
+                    <div class="col-lg-7 col-12">
+                        <div class=" d-flex align-items-center">
+                            <div class="card bet-dark-and-black basic-fontend-card me-4">
+                                <div class="card-body headline">
+                                    <h4 class="text-color-medium-white">Basic  </h4>
+                                    <h4 class="text-color-pale-white">Fontend</h4>
+                                   
+                                </div>
+                            </div>
+
+                            <div class="card bet-dark-and-black basic-fontend-card me-4">
+                                <div class="card-body headline">
+                                    <h4 class=" text-color-medium-white">300+<br>
+                                        <span class="text-color-pale-white">Lessons</span>
+                                     </h4>
+                                </div>
+                            </div>
+
+                            <div class="d-flex justify-content-center align-items-center  rounded-4 fa-angles-right-icon button-color   headline">
+                                <i class="fa-solid fa-angles-right fa-2x "></i>
+                            </div>
+                        </div>
+
+                        <div class="d-flex flex-column align-items-center flex-md-row ">
+                            <div class=" green-correct-card me-10">
+                                <div class=" headline">
+                                    <div class="d-flex ">
+                                        <div class="">
+                                            <i class="fa-solid fa-check green-correct p-1 rounded-circle border-green "></i>
+                                        </div>
+                                        <div class="ms-2">
+                                            <h5 class="text-color-medium-white">Video Record</h5>
+                                            <h6 class="text-color-pale-white">Up To 240+</h6>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class=" green-correct-card">
+                                <div class=" headline">
+                                    <div class="d-flex ">
+                                        <div class="">
+                                            <i class="fa-solid fa-check green-correct p-1 rounded-circle border-green "></i>
+                                        </div>
+                                        <div class="ms-2">
+                                            <h5 class="text-color-medium-white">Video Record</h5>
+                                            <h6 class="text-color-pale-white">Up To 160+</h6>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class=" green-correct-card third-card">
+                            <div class=" headline">
+                                <div class="d-flex ">
+                                    <div class="">
+                                        <i class="fa-solid fa-check green-correct p-1 rounded-circle border-green "></i>
+                                    </div>
+                                    <div class="ms-2">
+                                        <h5 class="text-color-medium-white">Video Record</h5>
+                                        <h6 class="text-color-pale-white">Up To 250+</h6>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-5 col-12 d-flex justify-content-lg-end mt-5 mt-lg-0">
+                        <ul class="list-unstyled d-flex flex-lg-column flex-row justify-content-between justify-content-lg-start w-100">
+                            <div class="language  headline">
+                                <li class="text-color-medium-white my-lg-3 fw-bold d-flex align-items-center ">
+                                    <i class="fa-solid fa-check green-correct icon-font-size me-2"></i>
+                                    <h5>Html</h5>
+                                </li>
+                                <li class="text-color-medium-white my-lg-3 fw-bold d-flex align-items-center">
+                                    <i class="fa-solid fa-check green-correct icon-font-size me-2"></i>
+                                    <h5>Css</h5>
+                                </li>
+                                <li class="text-color-medium-white my-lg-3 fw-bold d-flex align-items-center">
+                                    <i class="fa-solid fa-check green-correct icon-font-size me-2"></i>
+                                    <h5>Bootstrap</h5>
+                                </li>
+                                <li class="text-color-medium-white my-lg-3 fw-bold d-flex align-items-center">
+                                    <i class="fa-solid fa-check green-correct icon-font-size me-2"></i>
+                                    <h5>Javascript</h5>
+                                </li>
+                            </div>
+                            <div class="language ">
+                                <li class="text-color-medium-white my-lg-3 fw-bold d-flex align-items-center">
+                                    <i class="fa-solid fa-check green-correct icon-font-size me-2"></i>
+                                    <h5>Git</h5>
+                                </li>
+                                <li class="text-color-medium-white my-lg-3 fw-bold d-flex align-items-center">
+                                    <i class="fa-solid fa-check green-correct icon-font-size me-2"></i>
+                                    <h5>Github</h5>
+                                </li>
+                                <li class="text-color-medium-white my-lg-3 fw-bold d-flex align-items-center">
+                                    <i class="fa-solid fa-check green-correct icon-font-size me-2"></i>
+                                    <h5 class=" text-start">2*Pritical Projects</h5>
+                                </li>
+                            </div>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+         </div>
+                        </div>
+                      </div>
+                       <!-- Slide-2 -->
+                       <div class="carousel-item active ">
+                        <div class="swiper-slide">
+                         <!-- Main-card -->
+                          <div class="card card-padding bg-color-dark mb-15 rounded-3">
+            <div class="card-body">
+                <h3 class=" text-color-medium-white">Frontend Web Development</h3>
+                <h6  class=" text-color-pale-white mt-4" >
+                    Playground are advanced training labs that simulate real-world scenarios, giving players a chance to assess<br>
+                    and penetrate enterprise infrastructure environments and prove their offensive security skills.
+                </h6>
+                <!-- Sub-Card -->
+                <div class="sub-card row justify-content-between">
+                    <div class="col-lg-7 col-12">
+                        <div class=" d-flex align-items-center">
+                            <div class="card bet-dark-and-black basic-fontend-card me-4">
+                                <div class="card-body">
+                                    <h4 class="text-color-medium-white">Basic  </h4>
+                                    <h4 class="text-color-pale-white">Fontend</h4>
+                                   
+                                </div>
+                            </div>
+
+                            <div class="card bet-dark-and-black basic-fontend-card me-4">
+                                <div class="card-body">
+                                    <h4 class=" text-color-medium-white">300+<br>
+                                        <span class="text-color-pale-white">Lessons</span>
+                                     </h4>
+                                </div>
+                            </div>
+
+                            <div class="d-flex justify-content-center align-items-center  rounded-4 fa-angles-right-icon button-color  ">
+                                <i class="fa-solid fa-angles-right fa-2x "></i>
+                            </div>
+                        </div>
+
+                        <div class="d-flex flex-column align-items-center flex-md-row ">
+                            <div class=" green-correct-card me-10">
+                                <div class="">
+                                    <div class="d-flex ">
+                                        <div class="">
+                                            <i class="fa-solid fa-check green-correct p-1 rounded-circle border-green "></i>
+                                        </div>
+                                        <div class="ms-2">
+                                            <h5 class="text-color-medium-white">Video Record</h5>
+                                            <h6 class="text-color-pale-white">Up To 240+</h6>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class=" green-correct-card">
+                                <div class="">
+                                    <div class="d-flex ">
+                                        <div class="">
+                                            <i class="fa-solid fa-check green-correct p-1 rounded-circle border-green "></i>
+                                        </div>
+                                        <div class="ms-2">
+                                            <h5 class="text-color-medium-white">Video Record</h5>
+                                            <h6 class="text-color-pale-white">Up To 160+</h6>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class=" green-correct-card third-card">
+                            <div class="">
+                                <div class="d-flex ">
+                                    <div class="">
+                                        <i class="fa-solid fa-check green-correct p-1 rounded-circle border-green "></i>
+                                    </div>
+                                    <div class="ms-2">
+                                        <h5 class="text-color-medium-white">Video Record</h5>
+                                        <h6 class="text-color-pale-white">Up To 250+</h6>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-5 col-12 d-flex justify-content-lg-end mt-5 mt-lg-0">
+                        <ul class="list-unstyled d-flex flex-lg-column flex-row justify-content-between justify-content-lg-start w-100">
+                            <div class="language ">
+                                <li class="text-color-medium-white my-lg-3 fw-bold d-flex align-items-center ">
+                                    <i class="fa-solid fa-check green-correct icon-font-size me-2"></i>
+                                    <h5>Html</h5>
+                                </li>
+                                <li class="text-color-medium-white my-lg-3 fw-bold d-flex align-items-center">
+                                    <i class="fa-solid fa-check green-correct icon-font-size me-2"></i>
+                                    <h5>Css</h5>
+                                </li>
+                                <li class="text-color-medium-white my-lg-3 fw-bold d-flex align-items-center">
+                                    <i class="fa-solid fa-check green-correct icon-font-size me-2"></i>
+                                    <h5>Bootstrap</h5>
+                                </li>
+                                <li class="text-color-medium-white my-lg-3 fw-bold d-flex align-items-center">
+                                    <i class="fa-solid fa-check green-correct icon-font-size me-2"></i>
+                                    <h5>Javascript</h5>
+                                </li>
+                            </div>
+                            <div class="language ">
+                                <li class="text-color-medium-white my-lg-3 fw-bold d-flex align-items-center">
+                                    <i class="fa-solid fa-check green-correct icon-font-size me-2"></i>
+                                    <h5>Git</h5>
+                                </li>
+                                <li class="text-color-medium-white my-lg-3 fw-bold d-flex align-items-center">
+                                    <i class="fa-solid fa-check green-correct icon-font-size me-2"></i>
+                                    <h5>Github</h5>
+                                </li>
+                                <li class="text-color-medium-white my-lg-3 fw-bold d-flex align-items-center">
+                                    <i class="fa-solid fa-check green-correct icon-font-size me-2"></i>
+                                    <h5 class=" text-start">2*Pritical Projects</h5>
+                                </li>
+                            </div>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+                           </div>
+                        </div>
+                      </div>
+                       <!-- Slide-2 -->
+                       <div class="carousel-item active ">
+                        <div class="swiper-slide">
+                         <!-- Main-card -->
+                          <div class="card card-padding bg-color-dark mb-15 rounded-3">
+                              <div class="card-body">
+                <h3 class=" text-color-medium-white">Frontend Web Development</h3>
+                <h6  class=" text-color-pale-white mt-4" >
+                    Playground are advanced training labs that simulate real-world scenarios, giving players a chance to assess<br>
+                    and penetrate enterprise infrastructure environments and prove their offensive security skills.
+                </h6>
+                <!-- Sub-Card -->
+                <div class="sub-card row justify-content-between">
+                    <div class="col-lg-7 col-12">
+                        <div class=" d-flex align-items-center">
+                            <div class="card bet-dark-and-black basic-fontend-card me-4">
+                                <div class="card-body">
+                                    <h4 class="text-color-medium-white">Basic  </h4>
+                                    <h4 class="text-color-pale-white">Fontend</h4>
+                                   
+                                </div>
+                            </div>
+
+                            <div class="card bet-dark-and-black basic-fontend-card me-4">
+                                <div class="card-body">
+                                    <h4 class=" text-color-medium-white">300+<br>
+                                        <span class="text-color-pale-white">Lessons</span>
+                                     </h4>
+                                </div>
+                            </div>
+
+                            <div class="d-flex justify-content-center align-items-center  rounded-4 fa-angles-right-icon button-color  ">
+                                <i class="fa-solid fa-angles-right fa-2x "></i>
+                            </div>
+                        </div>
+
+                        <div class="d-flex flex-column align-items-center flex-md-row ">
+                            <div class=" green-correct-card me-10">
+                                <div class="">
+                                    <div class="d-flex ">
+                                        <div class="">
+                                            <i class="fa-solid fa-check green-correct p-1 rounded-circle border-green "></i>
+                                        </div>
+                                        <div class="ms-2">
+                                            <h5 class="text-color-medium-white">Video Record</h5>
+                                            <h6 class="text-color-pale-white">Up To 240+</h6>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class=" green-correct-card">
+                                <div class="">
+                                    <div class="d-flex ">
+                                        <div class="">
+                                            <i class="fa-solid fa-check green-correct p-1 rounded-circle border-green "></i>
+                                        </div>
+                                        <div class="ms-2">
+                                            <h5 class="text-color-medium-white">Video Record</h5>
+                                            <h6 class="text-color-pale-white">Up To 160+</h6>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class=" green-correct-card third-card">
+                            <div class="">
+                                <div class="d-flex ">
+                                    <div class="">
+                                        <i class="fa-solid fa-check green-correct p-1 rounded-circle border-green "></i>
+                                    </div>
+                                    <div class="ms-2">
+                                        <h5 class="text-color-medium-white">Video Record</h5>
+                                        <h6 class="text-color-pale-white">Up To 250+</h6>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-5 col-12 d-flex justify-content-lg-end mt-5 mt-lg-0">
+                        <ul class="list-unstyled d-flex flex-lg-column flex-row justify-content-between justify-content-lg-start w-100">
+                            <div class="language ">
+                                <li class="text-color-medium-white my-lg-3 fw-bold d-flex align-items-center ">
+                                    <i class="fa-solid fa-check green-correct icon-font-size me-2"></i>
+                                    <h5>Html</h5>
+                                </li>
+                                <li class="text-color-medium-white my-lg-3 fw-bold d-flex align-items-center">
+                                    <i class="fa-solid fa-check green-correct icon-font-size me-2"></i>
+                                    <h5>Css</h5>
+                                </li>
+                                <li class="text-color-medium-white my-lg-3 fw-bold d-flex align-items-center">
+                                    <i class="fa-solid fa-check green-correct icon-font-size me-2"></i>
+                                    <h5>Bootstrap</h5>
+                                </li>
+                                <li class="text-color-medium-white my-lg-3 fw-bold d-flex align-items-center">
+                                    <i class="fa-solid fa-check green-correct icon-font-size me-2"></i>
+                                    <h5>Javascript</h5>
+                                </li>
+                            </div>
+                            <div class="language ">
+                                <li class="text-color-medium-white my-lg-3 fw-bold d-flex align-items-center">
+                                    <i class="fa-solid fa-check green-correct icon-font-size me-2"></i>
+                                    <h5>Git</h5>
+                                </li>
+                                <li class="text-color-medium-white my-lg-3 fw-bold d-flex align-items-center">
+                                    <i class="fa-solid fa-check green-correct icon-font-size me-2"></i>
+                                    <h5>Github</h5>
+                                </li>
+                                <li class="text-color-medium-white my-lg-3 fw-bold d-flex align-items-center">
+                                    <i class="fa-solid fa-check green-correct icon-font-size me-2"></i>
+                                    <h5 class=" text-start">2*Pritical Projects</h5>
+                                </li>
+                            </div>
+                        </ul>
+                    </div>
+                </div>
+                              </div>
+                           </div>
+                        </div>
+                      </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                      <spc:\Users\S-5\AppData\Local\Programs\Microsoft VS Code\resources\app\out\vs\code\electron-sandbox\workbench\workbench.htmlan class="carousel-control-prev-icon" aria-hidden="true"></spc:>
+                      <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Next</span>
+                    </button>
+                  </div>
+            </div>
+        </div>
+
+    </section>
+
+
+
+    <!-- Other-Services -->
+
+    <section class="bg-color-dark ">
+        <!-- Other-services-header -->
+        <div class="other-services container">
+            <div class="headline">
+                <h4 class="text-color-pale-white text-center mb-5">OTHER SERVICES</h4>
+                <h1 class="text-color-medium-white text-center">Everything Around Development</h1>
+                <h6 class="text-color-pale-white text-center mt-4">
+                    A portfolio of cybersecurity training services and products, constantly enriched to help our users augment<br>
+                     their skills in the most engaging and rewarding way possible.
+                </h6>
+            </div>
+        </div>
+
+        <!-- other-services-cards -->
+
+        <div class="otherservice-cards container">
+            <div class="row g-5 g-md-5 headline">
+
+                <!-- card-1 -->
+                <div class="col-lg-4 headline">
+                    <div class="">
+                        <div class="card rounded-4 bet-dark-and-black p-5">
+                            <div class="card-body">
+                                <div class="text-center">
+                                    <i class="fas fa-flag text-white change-icon-color fa-2x"></i>
+                                </div> 
+                                <div class="">
+                                    <h3 class="text-center fw-bold my-5 text-color-medium-white">Capture The Flag</h3>
+
+                                    <p class="text-color-pale-white text-center">
+                                        Hacking challenges that will enable you
+                                         to compete with others and advance
+                                          your skills. From Jeopardy-style to Full
+                                           Pwn and AD, we have it.<br>
+                                    </p>
+                                    <h6 class=" green-correct text-center">
+                                        Play CTFs
+                                    </h6>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                  <!-- card-2 -->
+                  <div class="col-lg-4 headline">
+                    <div class="">
+                        <div class="card rounded-4 bet-dark-and-black p-5">
+                            <div class="card-body">
+                                <div class="text-center">
+                                    <i class="fas fa-flag text-white change-icon-color fa-2x"></i>
+                                </div> 
+                                <div class="">
+                                    <h3 class="text-center fw-bold my-5 text-color-medium-white">Battlegrounds</h3>
+
+                                    <p class="text-color-pale-white text-center">
+                                        Real-time multiplayer hacking games!
+                                         Invite friends, choose any of the
+                                          different Game Modes, form a team,
+                                           join the battlefield!
+                                           <br><br>
+                                    </p>
+                                    <h6 class=" green-correct text-center">
+                                        Play CTFs
+                                    </h6>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                  <!-- card-3-->
+                  <div class="col-lg-4 headline">
+                    <div class="">
+                        <div class="card rounded-4 bet-dark-and-black p-5">
+                            <div class="card-body">
+                                <div class="text-center">
+                                    <i class="fas fa-flag text-white change-icon-color fa-2x"></i>
+                                </div> 
+                                <div class="">
+                                    <h3 class="text-center fw-bold my-5 text-color-medium-white">InfoSec Careers</h3>
+
+                                    <p class="text-color-pale-white text-center">
+                                        Looking for a new job in cybersecurity?
+                                         Visit Careers. Set up your preferences,
+                                          see all the available job openings, apply,
+                                          nail the interview, get hired.
+                                    </p>
+                                    <h6 class=" green-correct text-center">
+                                        Play CTFs
+                                    </h6>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row mt-4">
+                <div class="">
+                    <div class="card bet-dark-and-black p-5 rounded-4">
+                        <div class="card-body">
+                            <div class="row ">
+
+                                <!-- left-content -->
+                                <div class="col-lg-6 d-flex flex-row align-items-center headline">
+                                    <div class="d-flex justify-content-center justify-content-lg-start">
+                                        <div class="">
+                                            <div class="d-flex justify-content-start">
+                                                <i class="fas fa-flag text-white fa-2x"></i>
+                                            </div> 
+                                            <div class="">
+                                                <h2 class=" fw-bold my-5 text-color-medium-white">Academy</h2>
+            
+                                                <p class="text-color-pale-white ">
+                                                    Hacking challenges that will enable you<br>
+                                                     to compete with others and advance<br>
+                                                      your skills. From Jeopardy-style to Full<br>
+                                                       Pwn and AD, we have it all!
+                                                </p>
+                                                <h6 class=" green-correct mt-5">
+                                                    Play CTFs
+                                                </h6>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- right-cards -->
+
+                                <div class="col-lg-6 mt-5 mt-lg-0 headline">
+                                    <div class="row g-lg-3 g-5">
+                                        <!-- card-1 -->
+                                        <div class="col-md-6">
+                                            <div class="d-flex justify-content-end">
+                                                <div class="card border-0 right-all-card rounded-4 ">
+                                                    <img src="../photos/my acc.jpg" class="card-img-top" alt="...">
+                                                    <div class="card-body">
+                                                      <p class="card-text text-color-pale-white">
+                                                        Some quick example text
+                                                      </p>
+                                                      <div class="">
+                                                        <button class="section-btn text-color-pale-white px-3 py-2 rounded-4 bet-dark-and-black  border-0 me-1">18 Section</button>
+                                                        <button class="section-btn text-color-pale-white px-3 py-2 rounded-4 bet-dark-and-black  border-0">+50</button>
+                                                      </div>
+
+                                                      <div class="mt-2">
+                                                        <button class="text-danger px-md-5 px-2 py-2 rounded-4 offensive-btn border-0">Offensive</button>
+                                                      </div>
+                                                    </div>
+                                                  </div>
+                                            </div>
+                                        </div>
+
+                                        <!-- card-2 -->
+                                        <div class="col-md-6">
+                                            <div class="d-flex justify-content-end">
+                                                <div class="card border-0 right-all-card rounded-4 ">
+                                                    <img src="../photos/my acc.jpg" class="card-img-top" alt="...">
+                                                    <div class="card-body">
+                                                      <p class="card-text text-color-pale-white">
+                                                        Some quick example text
+                                                      </p>
+                                                      <div class="">
+                                                        <button class="section-btn text-color-pale-white px-3 py-2 rounded-4 bet-dark-and-black  border-0 me-1">18 Section</button>
+                                                        <button class="section-btn text-color-pale-white px-3 py-2 rounded-4 bet-dark-and-black  border-0">+50</button>
+                                                      </div>
+
+                                                      <div class="mt-2">
+                                                        <button class="text-danger px-5 py-2 rounded-4 offensive-btn border-0">Offensive</button>
+                                                      </div>
+                                                    </div>
+                                                  </div>
+                                            </div>
+                                        </div>
+
+                                        <!-- card-3 -->
+                                        <div class="col-md-6">
+                                            <div class="d-flex justify-content-end">
+                                                <div class="card border-0 right-all-card rounded-4 ">
+                                                    <img src="../photos/my acc.jpg" class="card-img-top" alt="...">
+                                                    <div class="card-body">
+                                                      <p class="card-text text-color-pale-white">
+                                                        Some quick example text
+                                                      </p>
+                                                      <div class="">
+                                                        <button class="section-btn text-color-pale-white px-3 py-2 rounded-4 bet-dark-and-black  border-0 me-1">18 Section</button>
+                                                        <button class="section-btn text-color-pale-white px-3 py-2 rounded-4 bet-dark-and-black  border-0">+50</button>
+                                                      </div>
+
+                                                      <div class="mt-2">
+                                                        <button class="text-danger px-lg-5 py-2 rounded-4 offensive-btn border-0">Offensive</button>
+                                                      </div>
+                                                    </div>
+                                                  </div>
+                                            </div>
+                                        </div>
+
+                                        <!-- card-4 -->
+                                        <div class="col-md-6">
+                                            <div class="d-flex justify-content-end">
+                                                <div class="card border-0 right-all-card rounded-4 ">
+                                                    <img src="../photos/my acc.jpg" class="card-img-top" alt="...">
+                                                    <div class="card-body">
+                                                      <p class="card-text text-color-pale-white">
+                                                        Some quick example text
+                                                      </p>
+                                                      <div class="">
+                                                        <button class="section-btn text-color-pale-white px-3 py-2 rounded-4 bet-dark-and-black  border-0 me-1">18 Section</button>
+                                                        <button class="section-btn text-color-pale-white px-3 py-2 rounded-4 bet-dark-and-black  border-0">+50</button>
+                                                      </div>
+
+                                                      <div class="mt-2">
+                                                        <button class="text-danger px-5 py-2 rounded-4 offensive-btn border-0">Offensive</button>
+                                                      </div>
+                                                    </div>
+                                                  </div>
+                                            </div>
+                                        </div>
+
+                                         
+
+
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+
+        <!-- Academy -->
+
+    <section class="bet-dark-and-black ">
+        <section >
+            <div class="container pt-20 pb-20">
+
+                <!-- Number-cards -->
+                <div class="row justify-content-lg-between justify-content-center headline">
+                    <div class="col-md-5 col-11  d-flex justify-content-lg-between justify-content-md-center justify-content-between">
+                        <div class="text-center">
+                            <h1 class="text-color-primary">300+</h1>
+                            <h6 class="text-color-pale-white">Hacking Labs</h6>
+                        </div>
+
+                        <div class="me-md-4 text-center ms-5">
+                            <h1 class="text-color-primary">2.4m</h1>
+                            <h6 class="text-color-pale-white">Platforms Members</h6>
+                        </div>
+                    </div>
+
+                    <div class="col-md-5 mt-5 mt-md-0 col-11 d-flex justify-content-between">
+                        <div class="ms-md-4  text-center me-5">
+                            <h1 class="text-color-primary">4.3m</h1>
+                            <h6 class="text-color-pale-white">Playtime Hours</h6>
+                        </div>
+
+                        <div class="text-center">
+                            <h1 class="text-color-primary">1k+</h1>
+                            <h6 class="text-color-pale-white">Company & University</h6>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- academy-btn-section -->
+
+                <div class="row mt-20 headline">
+                    <div class="text-center headline">
+                        <h1 class="text-white">Academy</h1>
+                        <h5 class="text-color-pale-white my-5">Train your students with Hack The Box</h5>
+                        <div class="headline">
+                            <button class="text-color-primary join-now-btn rounded-3 ">Join Now</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+
+
+
+
+
+
+    </section>
+
+    <!-- footer -->
+
+    <section class="bg-color-dark pt-20 pb-10 footer"id="footer">
+        <div class="container">
+            <div class="row d-flex justify-content-center  ">
+                <div class="col-lg-6 col-11">
+                    <div class="d-flex flex-column flex-md-row justify-content-between align-items-center">
+                        <h1 class="text-color-medium-white headline">Ready To Start Your<br>
+                            Developer Journey?
+                        </h1>
+                        <div class="d-flex justify-content-center align-items-center  mt-5 mt-md-0">
+                            <button class="headline bg-color-primary join-now-btn-2 rounded-3 bg fw-bold text-black">Join Now</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    
+    
+            <!-- Fotter-link -->
+            <div class="row  mt-20 footer-link">
+                <!-- First-link -->
+                <div class="col-3  headline">
+
+                    <div class="row">
+                        <div class="nav-icon">
+                            <div class="d-flex align-items-center">
+                                <div class="">
+                                    <img class="me-1 footer-img" src="../photos/bl.svg" alt="">
+                                </div>
+                                <span class="">
+                                    <h3 class="text-white mb-0">berryleaf</h3>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row  mt-10">
+                        <ul class="list-unstyled">
+                            <li class="text-color-pale-white text-uppercase mb-2">Home</li>
+                            <li class="text-color-pale-white text-uppercase mb-2">Company</li>
+                            <li class="text-color-pale-white text-uppercase mb-2">University</li>
+                        </ul>
+                    </div>
+                </div>
+
+                 <!-- sec-link -->
+
+                <div class="col-3  headline">
+                    <div class="row mt-5">
+                        <ul class="list-unstyled">
+                            <li class="text-color-medium-white fw-bold text-uppercase mb-3">Products</li>
+                            <li class="text-color-pale-white text-uppercase mb-3">Playground</li>
+                            <li class="text-color-pale-white text-uppercase mb-3">Pro Labs</li>
+                            <li class="text-color-pale-white text-uppercase mb-3">Academy</li>
+                        </ul>
+                    </div>
+                </div>
+
+                 <!-- three-link -->
+
+                <div class="col-3  headline">
+                    <div class="row mt-5">
+                        <ul class="list-unstyled">
+                            <li class="text-color-medium-white fw-bold text-uppercase mb-3">Products</li>
+                            <li class="text-color-pale-white text-uppercase mb-3">Playground</li>
+                            <li class="text-color-pale-white text-uppercase mb-3">Pro Labs</li>
+                            <li class="text-color-pale-white text-uppercase mb-3">Academy</li>
+                        </ul>
+                    </div>
+                </div>
+
+                 <!-- fourt-link -->
+
+                <div class="col-3  headline">
+                    <div class="row mt-5">
+                        <ul class="list-unstyled">
+                            <li class="text-color-medium-white fw-bold text-uppercase mb-3">Resources</li>
+                            <li class="text-color-pale-white text-uppercase mb-3">Knowledge Base</li>
+                            <li class="text-color-pale-white text-uppercase mb-3">Blog</li>
+                            <li class="text-color-pale-white text-uppercase mb-3">Community</li>
+                            <li class="text-color-pale-white text-uppercase mb-3">Testimonials</li>
+                            <li class="text-color-pale-white text-uppercase mb-3">Certificate Validations</li>
+                            <li class="text-color-pale-white text-uppercase mb-3">Teams</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="d-flex mt-5  headline">
+                <h6 class="text-color-pale-white me-5">&copy; 2020 berryleaf</h6>
+                <h6 class="text-color-pale-white">Privacy notice</h6>
+            </div>
+
+            <div class="footer-fixed d-none headline">
+                <div class=" footer-up-icon rounded-circle  animate__animated">
+                    <a class=" text-dark" href="#nav">
+                        <i class="fa-solid fa-angles-up fa-2x text-dark"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+
+
+
+
+
+
+
+
+
+
+
+
+    
+    <script src="../node_module/waypoints/lib/noframework.waypoints.min.js"></script>
+    <script src="../node_module/scrollreveal/dist/scrollreveal.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js" integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>    <script src="../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="./cus.js"></script>
+      <!-- scrol-revel -->
+      <script>
+        ScrollReveal({
+            origin: 'bottom' ,
+            distance: '80px',
+            duration: 1300,
+          
+            reset : true,
+        }).reveal('.headline'),{
+            interval : 200,
+        };
+    </script>
+
+    <!-- Loading-section -->
+
+    <script>
+        window.addEventListener('load', _ =>{
+            document.querySelector('.loading').style.opacity ='0'
+            document.querySelector('.loading').style.zIndex ='-5'
+        })
+    </script>
+
+    <!-- Slick
+
+    <script>
+  
+        $('.slide').slick({
+          dots: true,
+          infinite: true,
+          speed: 300,
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          autoplay: true,
+          autoplaySpeed: 2000,
+          responsive: [
+            {
+              breakpoint: 1024,
+              settings: {
+                slidesToShow: 1,
+                slidesToScroll:1,
+                infinite: true,
+                dots: true
+              }
+            },
+            {
+              breakpoint: 768,
+              settings: {
+                slidesToShow: 1,
+                slidesToScroll: 1
+              }
+            },
+        
+            // You can unslick at a given breakpoint now by adding:
+            // settings: "unslick"
+            // instead of a settings object
+          ]
+        });
+    </script> -->
+
+
+     <!-- Menu-icon -->
+      <script>
+        let menuIcon = document.querySelector('.menu-icon')
+        menuIcon.addEventListener('click',()=>{
+            menuIcon.classList.toggle('show')
+        })
+        
+    </script>
+</body>
+</html>
