@@ -447,7 +447,7 @@ input:focus{
   /* Carosel */
   .carousel-control-prev{
     margin-left: -2%;
-    margin-top: 500px;
+    margin-top: 450px!important;
     background-color:var(--dark);
     height: 50px;
     width: 50px;
@@ -456,7 +456,7 @@ input:focus{
 }
 .carousel-control-next{
     margin-right: -2%;
-    margin-top: 500px;
+    margin-top: 450px!important;
     background-color: var(--dark);
     height: 50px;
     width: 50px;
@@ -464,20 +464,7 @@ input:focus{
     border-radius: 50%;
 }
 
-.carousel-control-prev-2{
-    opacity:1;
-    margin-top: 250px!important;
-    margin-left:2% ;
-    background:var(--bet-dark-and-black)!important;
-    
-}
-.carousel-control-next-2{
-    opacity:1;
-    margin-top: 250px!important;
-    margin-right:2% ;
-    background:var(--bet-dark-and-black)!important;
-    
-}
+
   
   /* Menu-Icon */
   
@@ -567,20 +554,25 @@ input:focus{
 
     /* Slide */
 
-    .carousel-control-prev-2{
-        opacity:1;
-        margin-top: 220px;
-        margin-left:20px;
-        background:var(--bet-dark-and-black)!important;
-        
+    .carousel-control-prev{
+        margin-left: -2%;
+        margin-top: 600px;
+        background-color:var(--dark);
+        height: 50px;
+        width: 50px;
+        border: 3px solid var(--bet-dark-and-black);
+        border-radius: 50%;
     }
-    .carousel-control-next-2{
-        opacity:1;
-        margin-top: 220px;
-        margin-right:20px ;
-        background:var(--bet-dark-and-black)!important;
-        
+    .carousel-control-next{
+        margin-right: -2%;
+        margin-top: 600px;
+        background-color: var(--dark);
+        height: 50px;
+        width: 50px;
+        border: 3px solid var(--bet-dark-and-black);
+        border-radius: 50%;
     }
+
       
 
   @media screen and (max-width: 430px) {
@@ -705,20 +697,44 @@ input:focus{
       }
           /* Slide */
 
+          
+    .carousel-control-prev{
+        margin-left: -6%;
+        margin-top: 400px!important;
+        background-color:var(--dark);
+        height: 50px;
+        width: 50px;
+        border: 3px solid var(--bet-dark-and-black);
+        border-radius: 50%;
+    }
+    .carousel-control-next{
+        margin-right: -6%;
+        margin-top: 400px!important;
+        background-color: var(--dark);
+        height: 50px;
+        width: 50px;
+        border: 3px solid var(--bet-dark-and-black);
+        border-radius: 50%;
+    }
+
+
+
     .carousel-control-prev-2{
         width:30px;
         height:30px;
         opacity:1;
-        margin-top: 170px;
+        margin-top: 170px!important;
+        border: 3px solid var(--bet-dark-and-black);
         margin-left:-5px;
         background:var(--bet-dark-and-black)!important;
         
     }
     .carousel-control-next-2{
         width:30px;
+        border: 3px solid var(--bet-dark-and-black);
         height:30px;   
         opacity:1;
-        margin-top: 170px;
+        margin-top: 170px!important;
         margin-right:-5px ;
         background:var(--bet-dark-and-black)!important;
         
